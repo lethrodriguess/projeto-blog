@@ -1,0 +1,22 @@
+
+{% load static %}
+{% block body %} 
+<h1>
+    Detalhes da postagem:
+</h1>
+{% for postagem in postagens %}
+<p>
+    <img src="{{post.imagem.url}}">
+</p>
+
+<h2>
+    {{post.titulo}}
+</h2>
+<p>
+    {{post.texto}}
+</p>
+
+{% endfor %}
+{% endblock %}
+
+
